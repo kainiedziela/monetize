@@ -1,5 +1,6 @@
 import { Monetization } from "./monetization";
 
+/** Internal helper function for `monetize` that checks pattern validity. */
 export const checkPatternValidity = (options: Monetization): void => {
   const { pattern, negativePattern } = options;
 

@@ -50,4 +50,20 @@ describe("monetize", () => {
     options = { negativePattern: "-#" };
     expect(monetize(-1.23, options)).toBe("-1.23");
   });
+
+  it("should throw if an invalid pattern is passed in", () => {
+    ["!", ""].map((pattern) =>
+      expect(() => {
+        monetize(0, { pattern });
+      }).toThrow()
+    );
+  });
+
+  it("should throw if an invalid negative pattern is passed in", () => {
+    ["!", ""].map((negativePattern) =>
+      expect(() => {
+        monetize(0, { negativePattern });
+      }).toThrow()
+    );
+  });
 });

@@ -1,6 +1,13 @@
 import { checkPatternValidity } from "./check-pattern-validity";
 import { DEFAULT_OPTIONS, Monetization } from "./monetization";
 
+/**
+ * Returns a human friendly currency format.
+ * @param {number} value Number to perform formatting on.
+ * @param {Monetization} options Configuration of the formatting options.
+ *
+ * @see `demonetize` for a function to parse such a formatted string.
+ */
 export const monetize = (
   value: number,
   options: Monetization = DEFAULT_OPTIONS

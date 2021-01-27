@@ -1,3 +1,4 @@
+/** `monetize` and `demonetize` configuration options interface. */
 export interface Monetization {
   symbol?: string;
   groups?: number;
@@ -8,6 +9,7 @@ export interface Monetization {
   negativePattern?: string;
 }
 
+/** An object of sensible defaults for `monetize` and `demonetize`. */
 export const DEFAULT_OPTIONS = {
   symbol: "$",
   groups: 3,

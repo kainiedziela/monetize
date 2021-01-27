@@ -1,6 +1,13 @@
 import { DEFAULT_OPTIONS, Monetization } from "./monetization";
 import { monetize } from "./monetize";
 
+/**
+ * Returns a number parsed from a numerical currency-type string (probably created with `monetize`).
+ * @param {string} value The numerical currency-type string to perform parsing on.
+ * @param {Monetization} options Configuration of the formatting options.
+ *
+ * @see `monetize`
+ */
 export const demonetize = (
   value: string,
   options: Monetization = DEFAULT_OPTIONS
