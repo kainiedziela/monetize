@@ -2,9 +2,16 @@
 
 A lightweight library used to format a number to a currency format and parse such values back to numbers.
 
+## Installation
+
+```bash
+npm install @kainiedziela/monetize --save
+```
+
 ## Usage
 
 ```JS
+import { monetize, demonetize } from "@kainiedziela/monetize"
 monetize(1.23) // -> "$1.23"
 demonetize("$1.23") // -> 1.23
 ```

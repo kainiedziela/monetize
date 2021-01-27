@@ -1,6 +1,6 @@
 {
   "name": "@kainiedziela/monetize",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "Format and parse currency numbers",
   "main": "dist",
   "engines": {
