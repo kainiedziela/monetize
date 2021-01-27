@@ -1,19 +1,19 @@
 export interface Monetization {
-  symbol: string;
-  groups: number;
-  seperator: string;
-  decimal: string;
-  precision: number;
-  pattern: string;
-  negativePattern: string;
+  symbol?: string;
+  groups?: number;
+  separator?: string;
+  decimal?: string;
+  precision?: number;
+  pattern?: string;
+  negativePattern?: string;
 }
 
-export const DEFAULT_OPTIONS: Monetization = {
-  symbol: '$',
+export const DEFAULT_OPTIONS = {
+  symbol: "$",
   groups: 3,
-  seperator: ',',
-  decimal: '.',
+  separator: ",",
+  decimal: ".",
   precision: 2,
-  pattern: '!#',
-  negativePattern: '-!#',
+  pattern: "!#",
+  negativePattern: "-!#",
 };
