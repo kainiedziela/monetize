@@ -20,7 +20,7 @@ When using `demonetize` on a monetized value that had custom options remember to
 
 ## Options
 
-You can customize the formatting and parsing of `monetize` and `demonetie` with an optional options object. These values default to US centric currency values, but they can be overridden based on your locale.
+You can customize the formatting and parsing of `monetize` and `demonetize` with an optional options object. These values default to US centric currency values, but they can be overridden based on your locale.
 
 ### `symbol`, default: `"$"`
 
